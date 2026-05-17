@@ -1,0 +1,62 @@
+:root {
+  --text: #ecfdf5;
+  --muted: #9ca3af;
+  --bg: #0a0f13;
+  --panel: #101820;
+  --panel-soft: #0d141b;
+  --border: #20303a;
+  --accent: #2dd4bf;
+  --success: #22c55e;
+
+  font: 16px/145% Inter, ui-sans-serif, system-ui, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgb(18 29 36 / 82%) 0%, rgb(10 15 19 / 100%) 34%),
+    var(--bg);
+}
+
+h1 {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 40px;
+  line-height: 1.05;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+  outline: 3px solid rgb(45 212 191 / 42%);
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 32px;
+  }
+}

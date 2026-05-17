@@ -1,0 +1,86 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets.*
+credentials.*
+config.local.*
+.hf*/
+.huggingface/
+
+# FDvoice runtime data and dictation artifacts
+/FDvoice.ps1
+/resources/
+/run-fdvoice.cmd
+history.jsonl
+*.jsonl
+*.log
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+recordings/
+logs/
+
+# Local benchmark/model artifacts
+bench_*.py
+bench-corpus/
+bench-corpus-16k/
+distil-test.wav
+exports/
+*.pt
+*.onnx
+*.safetensors
+
+# Reference material and local scratch work
+BridgeVoice-Replica-Spec/
+.toolchain-check/
+
+# Python
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / frontend
+node_modules/
+fdvoice-tauri/dist/
+*.tsbuildinfo
+
+# Rust / Tauri build outputs
+target/
+fdvoice-tauri/src-tauri/target/
+fdvoice-tauri/src-tauri/gen/schemas/
+
+# Binaries, installers, and debug symbols
+*.exe
+*.dll
+*.pdb
+*.msi
+*.appx
+*.msix
+*.nupkg
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.dmg
+*.pkg
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

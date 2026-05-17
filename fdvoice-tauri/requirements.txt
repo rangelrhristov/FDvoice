@@ -1,0 +1,14 @@
+accelerate
+comtypes
+faster-whisper
+groq
+librosa
+nemoasr2pytorch
+numpy
+pycaw
+pynput
+pyperclip
+sounddevice
+soundfile
+torch
+transformers>=5.4.0
